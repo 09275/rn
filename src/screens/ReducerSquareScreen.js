@@ -52,6 +52,8 @@ const ReducerSquareScreen = () => {
   // "dispatch" is the equivalent to setter functions in "useState".
   // You use it to run the "reducer" function and change the state values.
   // In order to do that you pass it the "action" object values as arguments
+  // In other words the object you pass to dispatch is called an "action".
+  // Example of an action: {colorToChange: 'red', amount: COLOR_INCREMENT} 
   const [state, dispatch] = useReducer(reducer, {red: 0, green: 0, blue: 0})  
   const {red, green, blue} = state;
 
